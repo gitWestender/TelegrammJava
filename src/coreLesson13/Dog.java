@@ -1,11 +1,13 @@
 package coreLesson13;
 
 public class Dog extends Animal {
-    private Dog() {
-        System.out.println("I'm a dog");
+    public static final String DOG_TYPE = "Dog";
+
+    public Dog() {
+        super(DOG_TYPE, "woof");
     }
 
-    public Dog(String color) {
-        System.out.println("I'm a " + color + " dog");
+    public void woof() {
+        sound();
     }
 }
